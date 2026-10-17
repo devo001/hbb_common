@@ -2838,7 +2838,6 @@ pub fn option2bool(option: &str, value: &str) -> bool {
 }
 
 pub fn use_ws() -> bool {
-    return true;  // <--- Added by me
     let option = keys::OPTION_ALLOW_WEBSOCKET;
     option2bool(option, &Config::get_option(option))
 }
